@@ -1,4 +1,4 @@
 cmd/roll/roll
 *.exe
 *.swp
-.idea
+.idea/

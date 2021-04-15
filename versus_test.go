@@ -1,7 +1,7 @@
 package dice_test
 
 import (
-	. "github.com/justinian/dice"
+	. "github.com/mdbdba/dice"
 	. "gopkg.in/check.v1"
 )
 

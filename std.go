@@ -7,6 +7,7 @@ import (
 	"regexp"
 	"sort"
 	"strconv"
+	"time"
 )
 
 type StdRoller struct{}
@@ -71,6 +72,13 @@ func (StdRoller) Roll(matches []string) (RollResult, error) {
 	}
 
 	for i := 0; i < len(result.Rolls); i++ {
+		rand.Seed(time.Now().UnixNano())
+		testVal := rand.Intn(9) + 1
+		// fmt.Printf("Random value chosen: %d\n", testVal)
+		// Randomly insert a 2 second pause (30% chance)
+		if testVal < 4 {
+			time.Sleep(2 * time.Second)
+		}
 		roll := rand.Intn(int(sides)) + 1
 		result.Rolls[i] = roll
 	}

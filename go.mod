@@ -1,4 +1,4 @@
-module github.com/justinian/dice
+module github.com/mdbdba/dice
 
 go 1.13
 
