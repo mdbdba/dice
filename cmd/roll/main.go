@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/justinian/dice"
+	"github.com/mdbdba/dice"
 )
 
 func main() {
